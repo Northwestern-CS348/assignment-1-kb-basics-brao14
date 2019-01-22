@@ -1,4 +1,5 @@
 fact: (isa cube block)
+fact: (isa cube block)
 fact: (isa pyramid block)
 fact: (isa sphere block)
 
@@ -33,4 +34,5 @@ fact: (inst cube2 cube)
 fact: (inst cube3 cube)
 fact: (inst cube4 cube)
 
+fact: (inst sphere1 sphere)
 fact: (inst sphere1 sphere)
