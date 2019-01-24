@@ -9,6 +9,9 @@ fact: (inst bigbox box)
 fact: (size bigbox big)
 fact: (color bigbox red)
 
+rule: ((inst ?x ?y) (isa ?y ?z)) -> (inst ?x ?z)
+rule: ((isa ?x ?y) (isa ?y ?z)) -> (isa ?x ?z)
+
 fact: (inst littlebox box)
 fact: (size littlebox small)
 fact: (color littlebox blue)

@@ -7,7 +7,7 @@ class KBTest(unittest.TestCase):
 
     def setUp(self):
         # Assert starter facts
-        file = 'statements_kb.txt'
+        file = 'statements_kb2.txt'
         data = read.read_tokenize(file)
         self.KB = KnowledgeBase([], [])
         count = 0 
@@ -17,6 +17,7 @@ class KBTest(unittest.TestCase):
                 self.KB.kb_assert(item)
         print(count)
         print(len(self.KB.facts))
+        print(self.KB.facts)
 
     def test1(self):
         ask1 = read.parse_input("fact: (color bigbox red)")

@@ -25,11 +25,12 @@ class KnowledgeBase(object):
         """
         decider = True;
         count = len(self.facts)
-        for i in range(0, count):
-            if type(match(fact.statement, self.facts[i].statement)) is not bool:
-                decider = False
-        if decider:
-            self.facts.append(fact)
+        if (fact.name == "fact"):
+            for i in range(0, count):
+                if type(match(fact.statement, self.facts[i].statement)) is not bool:
+                    decider = False
+            if decider:
+                self.facts.append(fact)
         print("Asserting {!r}".format(fact))
         
     def kb_ask(self, fact):
